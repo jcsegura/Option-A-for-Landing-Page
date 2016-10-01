@@ -1,0 +1,77 @@
+
+/* This is the Beginning of Row One: Contains NAME*/
+.alpha {
+  text-align: center;
+  height: 85px;
+}
+
+.alpha h2 {
+  margin-top:80px;
+  font: 50px 'Monaco',sans-serif;
+  color: purple;
+}
+/*This is the end of Row One*/
+
+/* This is the Beginning of Row Two: 'greeting' script */
+.beta {
+  text-align: center;
+  height: 100px;
+}
+
+/* This is the selection of your 'greeting' script in context to the font */
+#greeting {
+  font: 90px "Atômico", sans-serif;
+  color: purple;
+  text-transform: uppercase;
+}
+/* This is the End of Row Two */
+
+/* This is the Beginning of Row Three: Contains image in a Circle */
+img {
+  background-color: white;
+  width: 480px;
+  height: 380px;
+  border-radius: 100%;
+  /* Note: 100% radius = circle */
+  margin-top: 100px;
+}
+.gamma {
+  text-align: center;
+}
+/* This is the End of Row Three */
+
+
+
+
+/* == @media QUERIES  used by Foundation to resize == */
+@media screen and (min-width:0px) and (max-width:600px) {
+  /* CSS code for SMALL SCREENS */
+  /* The lines below change the height of Row One when displayed on mobile */
+  .alpha {
+    height: 40px;
+  }
+  /* The Lines below change the size and the top margin spacing of 'YOUR NAME' */
+  .alpha h2 {
+    font: 20px 'Skia', cursive;
+    color: #800000;
+    margin-top: 50px;
+  }
+  /* The lines below change the height of Row Two when displayed on mobile */
+  .beta {
+    height: 0px;
+  }
+  /* The lines below change the size of your 'greeting' script text */
+  #greeting {
+    font: 40px "Chalkduster", cursive;
+  }
+  /* The lines below change the height and width of your img when displayed on mobile */
+  img {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin-top: 100px;
+  }
+  /* Ignore the fact that it says 300 x 300 when reduced in size within the circle, the placeholder does not adjust when displayed smaller */
+ /* === THIS AREA WAS LEFT BLANK ON PURPOSE, BUT YOU SHOULD INPUT YOUR PARAMETERS FOR HOW YOU WANT ALL ROWS AND OBJECTS TO BE DISPLAYED ON LARGER FORMATS ===> */
+}

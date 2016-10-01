@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" href="css/foundation.css" media="screen">
+    <link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <title> Landing Page Option A </title>
+  </head>
+  <body>
+
+<!-- Beginning of Row One: NAME -->
+    <section class="row alpha">
+      <div class="columns small-12 large-12 name">
+        <h1>Welcome! Willkommen! Juan!</h1>
+      </div>
+    </section>
+<!-- End of Row One -->
+
+<!-- Beginning of Row Two: 'greeting'-->
+    <section class="row beta">
+      <!--Span was used to define "variable" name!-->
+    <h2><span id="greeting">Hello!</span></h2>
+      <script type="text/javascript">
+      /* This line creates a date object for the browser and assigns it to the variable called new Date() */
+        var myDate = new Date();
+      /*The 'Object' is affected by the 'Method' (object.scream) the (.) tells where to pull from
+      -parameters for if the hour is before noon */
+        if ( myDate.getHours() < 12 )
+        {
+          document.getElementById('greeting').innerHTML = "Good Morning!";
+        }
+        else
+
+        if ( myDate.getHours() >=12 && myDate.getHours() <=17 )
+        {
+          document.getElementById('greeting').innerHTML = "Good Afternoon!";
+        }
+        else
+
+        if ( myDate.getHours() > 17 && myDate.getHours() <=24 )
+        {
+          document.getElementById('greeting').innerHTML = "Good Evening!";
+        }
+        else {
+          document.getElementById('greeting').innerHTML = "Time to Go!";
+        }
+
+          </script>
+          </section>
+      <!-- End of Row Two -->
+
+      <!-- Beginning of Row Three: image -->
+            <section class="row gamma">
+              <div class="small-12 large-12">
+              <img src="images/pottery.jpg" alt="place_maker"/>
+              </div>
+            </section>
+
+      <!-- End of Row Three: Image -->
+
+
+    </body>
+  </html>
